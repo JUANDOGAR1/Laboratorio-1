@@ -1,0 +1,33 @@
+/*Problema 1. 
+Escriba un programa que identifique si un carácter ingresado es una vocal, una consonante o ninguna de las 2 e imprima un mensaje según el caso.
+Nota: el formato de salida debe ser:
+no es una letra.
+a es una vocal.
+C es una consonante.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char letra;
+
+    cout<<"Ingrese un caracter: "<<endl;
+    cin>>letra;
+
+
+    if((letra>=65 && letra<=90) or (letra>=97 && letra<=122)){
+        if(letra=='A'||letra=='E'||letra=='I'||letra=='O'||letra=='U'||letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u'){
+            cout<<letra<<" es una vocal"<<endl;
+        }
+        else{
+            cout<<letra<<" es una consonante"<<endl;
+        }
+    }
+    else{
+        cout<<"No es una letra"<<endl;
+    }
+
+    return 0;
+}
